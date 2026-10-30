@@ -16,7 +16,8 @@ archival purposes, attributed to their original authors where known. See
 - `data/` — pipeline artifacts (`cdx/`, `raw/` are gitignored; `parsed/` holds
   normalized output).
 - `app/` — the web app (recipe browser, calculator, takedown flow).
-- `docs/` — research notes, data model, calculator formula derivation, legal notes.
+- `docs/` — research notes, data model, calculator formula derivations (BrewToad
+  recipe stats and the acorn spirit forage calculator), legal notes.
 
 See `docs/research.md` for what's been verified about data availability, and the
 project plan for the full milestone breakdown.
