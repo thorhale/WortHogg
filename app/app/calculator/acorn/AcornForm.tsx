@@ -148,6 +148,31 @@ export default function AcornForm() {
       </section>
 
       <section style={{ marginTop: "1.5rem" }}>
+        <details open={preset === "red"}>
+          <summary style={{ cursor: "pointer", fontWeight: 700, fontSize: "1.1rem" }}>Mash notes</summary>
+          <ul style={{ fontSize: "0.9rem", lineHeight: 1.5, paddingLeft: "1.25rem", marginTop: "0.5rem" }}>
+            <li>
+              <strong>Leach before you mash.</strong> Grind the shelled kernels coarsely and cold-leach in
+              several changes of water until the bitterness is gone. Keep the water cold: heat gelatinizes
+              the starch and traps the tannins, and tannins knock down amylase and stress the yeast.
+            </li>
+            <li>
+              <strong>Bring your own enzymes.</strong> Acorns have no diastatic power. Boil the leached meal
+              to gelatinize the starch, then add high-temperature alpha-amylase and glucoamylase, or mash
+              with 20 to 25% six-row distiller&apos;s malt. The starch conversion field above assumes you
+              do one of these.
+            </li>
+            <li style={preset === "red" ? { background: "#f5e9d8", padding: "0.3rem 0.5rem", borderRadius: 4 } : undefined}>
+              <strong>Skim the oil cap.</strong> Red and black oak acorns run 15 to 24% fat, so an oil
+              slick rises during the boil. Skim it off: it goes rancid in the wash and foams in the still.
+              White oak acorns are usually under 10% fat and need less attention here.
+              {preset === "red" && " You have the red oak preset selected, so plan on skimming."}
+            </li>
+          </ul>
+        </details>
+      </section>
+
+      <section style={{ marginTop: "1.5rem" }}>
         <h2>Step by step</h2>
         <table style={{ borderCollapse: "collapse", minWidth: 360 }}>
           <tbody>
